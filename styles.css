@@ -1,0 +1,71 @@
+body{
+    background-image: url("bg.avif");
+    background-size:  cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.display{
+    border-radius: 20px;
+    height:auto;
+    width:70vw;
+    
+     position:relative;
+     top:5vh;
+     left:12vw;
+      background: rgba(172, 170, 170, 0.15);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+
+    
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    box-shadow:
+        0 8px 32px rgba(0,0,0,0.2),
+        inset 0 1px 1px rgba(255,255,255,0.4),
+        inset 0 -1px 1px rgba(255,255,255,0.15);
+}
+.headingfont{
+    color:black;
+    font-size:x-large;
+   
+   font-family: "Share Tech", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.subheadingfont{
+    color:black;
+    font-size:large;
+   
+   font-family: "Share Tech", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.coursebutton{
+    width:40vw;
+}
+.dropdown-menu{
+    width:40vw;
+}
+.item{
+    padding:1px;
+    border-radius: 5px;
+}
+.item:hover{
+background-color: black;
+color:white;
+}
+.item:focus{
+background-color: black;
+color:white;
+}
+.row{
+    width:60vw;
+
+}
+.markinput{
+    border-radius: 5px;
+    border:none;
+}
+

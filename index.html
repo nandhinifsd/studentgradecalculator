@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeCalculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+       <link href="styles.css" rel="stylesheet">
+       
+
+</head>
+<body>
+   
+    <div class="display p-3 m-5 text-center" id="disp">
+         <h1 class="text-center headingfont">GRADE CALCULATOR -XII Std</h1>
+        <div class="container mt-5 text-center">
+
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle subheadingfont coursebutton"
+                         type="button"
+                            data-bs-toggle="dropdown" id="course">
+
+                        Choose your course
+                    </button>
+
+                <ul class="dropdown-menu bg-light text-justify" id="coursename">
+                     <li class="item" id="group1">Chemistry, Physics,Maths, Biology</li>
+                    <li class="item" id="group2">Chemistry, Physics,Maths, ComputerScience</li>
+                    <li class="item" id="group3">Chemistry, Physics,Zoology, Botony</li>
+                     <li class="item" id="group4">Commerce, Accountancy, Economics, Buisness Maths</li>
+                    <li class="item" id="group5">Commerce, Accountancy, ComputerScience, Buisness Maths</li>
+                    <li class="item" id="group6">History,Geography,Ecnomics,Politics</li>
+                </ul>
+                </div>
+                
+
+            </div>
+            <div class="row text-center mt-1 p-3 subheadingfont ms-3 me-3 d-flex flex-column flex-lg-row g-1">
+                <div class="col-12 col-lg-4 text-center">
+                    <label class="subheadingfont  language d-block">Language-1</label></div>
+                <div class="col-12 col-lg-4 text-center">
+                    <input class="w-50 markinput marks" type="number" min="0" max="100" placeholder="Enter marks" required >
+                </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <input class="w-50 markinput grade" type="text" placeholder="Your Grade" readonly>
+                </div>
+            </div>
+             <div class="row text-center mt-1 p-3 subheadingfont ms-3 me-3 d-flex flex-column flex-lg-row g-1">
+                <div class="col-12 col-lg-4 text-center" >
+                    <label class="subheadingfont  language">Language-2</label></div>
+                    <div class="col-12 col-lg-4 text-center">
+                    <input class="w-50 markinput marks" type="number" id="marks" min="0" max="100" placeholder="Enter marks" required >
+                </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <input class="w-50 markinput grade" type="text" placeholder="Your Grade"  readonly>
+                </div>
+            </div>
+            <div class="row text-center mt-1 p-3 subheadingfont ms-3 me-3 d-flex flex-column flex-lg-row g-1">
+                <div class="col-12 col-lg-4 text-center">
+                    <label class="subheadingfont  subjectname">Core Subject-1</label></div>
+                    <div class="col-12 col-lg-4 text-center">
+                    <input class="w-50 markinput marks" type="number" id="marks" min="0" max="100" placeholder="Enter marks" required >
+                </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <input class="w-50 markinput grade" type="text" placeholder="Your Grade"  readonly>
+                </div>
+            </div>
+            <div class="row text-center mt-1 p-3 subheadingfont ms-3 me-3 d-flex flex-column flex-lg-row g-1">
+                <div class="col-12 col-lg-4 text-center">
+                    <label class="subheadingfont  subjectname" >Core Subject-2</label></div>
+                    <div class="col-12 col-lg-4 text-center">
+                    <input class="w-50 markinput marks" type="number" id="marks" min="0" max="100" placeholder="Enter marks" required>
+                </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <input class="w-50 markinput grade" type="text" placeholder="Your Grade"  readonly>
+                </div>
+            </div>
+            <div class="row text-center mt-1 p-3 subheadingfont ms-3 me-3 d-flex flex-column flex-lg-row g-1">
+                <div class="col-12 col-lg-4 text-center">
+                    <label class="subheadingfont  subjectname">Core Subject-3</label></div>
+                    <div class="col-12 col-lg-4 text-center">
+                    <input class="w-50 markinput marks" type="number" id="marks" min="0" max="100" placeholder="Enter marks" required>
+                </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <input class="w-50 markinput grade" type="text" placeholder="Your Grade"  readonly>
+                </div>
+            </div>
+            <div class="row text-center mt-1 p-3 subheadingfont ms-3 me-3 d-flex flex-column flex-lg-row g-1">
+                <div  class="col-12 col-lg-4 text-center">
+                    <label class="subheadingfont subjectname">Core Subject-4</label></div>
+                    <div class="col-12 col-lg-4 text-center">
+                    <input class="w-50 markinput marks" type="number" id="marks" min="0" max="100" placeholder="Enter marks" required>
+                </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <input class="w-50 markinput grade" type="text" placeholder="Your Grade"  readonly>
+                </div>
+            </div>
+            <div class="row text-center mt-1 p-3 headingfont ms-3 me-3 d-flex flex-column flex-lg-row g-1">
+                <div class="col-12 col-lg-6 text-center">
+                    <button class=" btn btn-light headingfont calculate w-100" type="submit" id="calculation">Know your Average</button>
+                </div> 
+                <div class="col-12 col-lg-6 text-center">
+                   <h1 id="resultdisplay" class="headingfont"></h1>         
+                </div> 
+            </div>
+
+            
+
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
